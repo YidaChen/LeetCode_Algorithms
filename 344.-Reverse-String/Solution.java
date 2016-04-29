@@ -6,4 +6,17 @@ public class Solution {
         }
         return sb.toString();
     }
+    public String reverseString2(String s) {
+		char[] world = s.toCharArray();
+		int i = 0;
+		int j = s.length() - 1;
+		while(i < j){
+			char temp = world[i];
+			world[i] = world[j];
+			world[j] = temp;
+			i++;
+			j--;
+		}
+		return new String(world);
+    }
 }
