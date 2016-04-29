@@ -14,8 +14,8 @@ public class Solution {
 			char temp = world[i];
 			world[i] = world[j];
 			world[j] = temp;
-			i++;
 			j--;
+			i++;
 		}
 		return new String(world);
     }
